@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main()
+{
+ int key=3;
+ int i=0,j=0;
+//  char y='x';
+//  int c=int(y);
+ char message[100],encrypt[100];
+ printf("enter the message");
+ scanf("%[^\n]",&message);
+ 
+ for(i=0;i<strlen(message);i++)
+ {
+    encrypt[j]=((((int(message[i])) -65 ) +3 )%26) + 65; 
+    j++;
+    
+ }
+   printf("%s",encrypt);
+   
+}
